@@ -57,7 +57,7 @@ function Login() {
               >
                 Sign in
               </button>
-              <p className="text-sm font-light text-white dark:text-white">
+              <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Don’t have an account yet?{' '}
                 <Link
                   to="/register"
