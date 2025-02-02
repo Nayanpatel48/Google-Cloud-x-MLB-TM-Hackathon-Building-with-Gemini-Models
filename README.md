@@ -6,7 +6,7 @@
 ## Tools & technologies used in this project:
 
 <div style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/f5c909e4-2698-4369-86bb-8efcc0dbe178" alt="Image 1" style="max-width: 200px; height: 200px;">
+  <img src="https://github.com/user-attachments/assets/11a76217-be59-45dc-9af2-002e7a4a1133" alt="Image 1" style="max-width: 200px; height: 200px;">
   <img src="https://github.com/user-attachments/assets/8e64bf1e-9a73-4b27-b663-87c22af1e161" alt="Image 2" style="max-width: 200px; height: auto;">
   <img src="https://github.com/user-attachments/assets/f58db321-3855-4d8f-acf1-75a1539002a5" alt="Image 3" style="max-width: 200px; height: auto;">
   <img src="https://github.com/user-attachments/assets/91f30d9b-0ec6-4129-9099-f5bc322a5a70" alt="Image 4" style="max-width: 200px; height: auto;">
