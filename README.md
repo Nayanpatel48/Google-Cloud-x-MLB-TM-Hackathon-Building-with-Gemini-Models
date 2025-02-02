@@ -6,14 +6,14 @@
 ## Tools & technologies used in this project:
 
 <div style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 10px;">
-  <img src="https://github.com/user-attachments/assets/f01c75c2-9ab9-41aa-b5a9-92d2b69e663a" alt="Image 1" style="max-width: 200px; height: 200px;">
-  <img src="https://github.com/user-attachments/assets/88d780ee-a700-411f-89cd-5d094e5ab1c6" alt="Image 2" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/16bb3bba-d9bd-4e85-a6bc-7856fcaf71f7" alt="Image 3" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/fe657d92-1eea-47ad-ace5-134930be212a" alt="Image 4" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/cbf7c0c2-2e3b-44df-b3a0-b16f8e97e029" alt="Image 5" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/ec429372-945d-427d-a898-08575be19756" alt="Image 6" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/45cff09b-fef5-4ba4-a5bf-e37a4356170a" alt="Image 7" style="max-width: 200px; height: auto;">
-  <img src="https://github.com/user-attachments/assets/e08b6e85-c1a2-4197-a58b-2ba7300b4084" alt="Image 8" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/f5c909e4-2698-4369-86bb-8efcc0dbe178" alt="Image 1" style="max-width: 200px; height: 200px;">
+  <img src="https://github.com/user-attachments/assets/8e64bf1e-9a73-4b27-b663-87c22af1e161" alt="Image 2" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/f58db321-3855-4d8f-acf1-75a1539002a5" alt="Image 3" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/91f30d9b-0ec6-4129-9099-f5bc322a5a70" alt="Image 4" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/2ef31bdb-6250-4f23-98a3-709341f3f762" alt="Image 5" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/76f7b85d-c6a3-4332-bfbf-395dbf4422be" alt="Image 6" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/ce15c17b-650b-4e10-9c78-b5129eae3b4b" alt="Image 7" style="max-width: 200px; height: auto;">
+  <img src="https://github.com/user-attachments/assets/93d92dc4-6649-468d-a62f-4ea49874164d" alt="Image 8" style="max-width: 200px; height: auto;">
 </div>
 
 ## Firebase auth setup:
