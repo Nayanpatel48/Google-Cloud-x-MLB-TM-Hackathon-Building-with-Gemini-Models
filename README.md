@@ -6,4 +6,4 @@
 ## Firebase auth setup:
 ### Registration(embedded diagram):
 
-<iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" src="https://miro.com/app/live-embed/uXjVLpRiwaQ=/?moveToViewport=9725,1146,2568,908&embedId=526750954019" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
+<iframe width="768" height="432" src="https://miro.com/app/embed/uXjVLpRiwaQ=/?pres=1&frameId=3458764615531869671&embedId=72559623663" frameborder="0" scrolling="no" allow="fullscreen; clipboard-read; clipboard-write" allowfullscreen></iframe>
