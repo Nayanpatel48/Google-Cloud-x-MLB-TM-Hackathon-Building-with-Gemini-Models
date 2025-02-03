@@ -26,4 +26,10 @@
 
 ## Learnings:
 
-1. OnChane prop : 
+### 1. OnChange prop : 
+
+```javaScript 
+onChange={(e) => setEmail(e.target.value)}
+```
+- Whenever the user types something into the input field, the `onChange` event is triggered.  The arrow function is executed, which takes the current value of the input field (`e.target.value`) and uses the `setEmail` function to update the `email` state variable in your React component.  This, in turn, causes React to re-render the component, reflecting the updated value in the input field (and anywhere else you might be using the `email` state).
+
