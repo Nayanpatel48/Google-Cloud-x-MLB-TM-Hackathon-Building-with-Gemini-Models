@@ -29,7 +29,15 @@
 ### 1. OnChange prop : 
 
 ```javaScript 
+<input
+value={email}
 onChange={(e) => setEmail(e.target.value)}
+/>
 ```
+- `value={email}`: This is the crucial part that makes the input controlled.  It binds the value of the input field to the `email` variable in your component's state.  This means:
+- The input field will always display the value that is stored in the `email` state variable.
+- If you change the `email` state (using `setEmail`), the input field will automatically update to reflect the new value.
+
 - Whenever the user types something into the input field, the `onChange` event is triggered.  The arrow function is executed, which takes the current value of the input field (`e.target.value`) and uses the `setEmail` function to update the `email` state variable in your React component.  This, in turn, causes React to re-render the component, reflecting the updated value in the input field (and anywhere else you might be using the `email` state).
 
+### 2. 
