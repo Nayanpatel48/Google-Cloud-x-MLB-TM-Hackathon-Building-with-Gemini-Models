@@ -26,7 +26,7 @@
 
 ## Learnings:
 
-### 1. OnChange, value prop : 
+### 1. OnChange, value prop for html elements such as input, buttons etc: 
 
 ```javaScript 
 <input
@@ -40,4 +40,13 @@
 
 - Whenever the user types something into the input field, the `onChange` event is triggered.  The arrow function is executed, which takes the current value of the input field (`e.target.value`) and uses the `setEmail` function to update the `email` state variable in your React component.  This, in turn, causes React to re-render the component, reflecting the updated value in the input field (and anywhere else you might be using the `email` state).
 
-### 2. 
+### 2. <Link/> tag: 
+
+```javaScript
+<Link to="/register">
+  Sign up
+</Link>
+```
+
+- `<Link ... >`: This is the JSX syntax for a link component, specifically the `Link` component from `react-router-dom`.  It's used for navigation within your React application.  It's preferred over regular `<a>`tags for internal links because it prevents a **full page reload** , making navigation faster and smoother.
+
