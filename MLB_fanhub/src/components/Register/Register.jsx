@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { auth } from '../../firebase'; // Import the auth instance
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { Link } from 'react-router-dom'; // Import Link if you're using react-router-dom
+import { Link,useNavigate } from 'react-router-dom'; // Import Link if you're using react-router-dom
 
 const Register = () => {
   const [email, setEmail] = useState('');
@@ -10,6 +10,7 @@ const Register = () => {
   const [phoneNumber, setPhoneNumber] = useState(''); // Add state for phone number
   const [error, setError] = useState(null);
 
+  const navigate = useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError(null);
@@ -17,6 +18,7 @@ const Register = () => {
     try {
       await createUserWithEmailAndPassword(auth, email, password);
       console.log("User registered successfully!");
+      navigate("/");
       // Here, you would typically also save the full name and phone number
       // to your database (e.g., using Firebase Firestore).  The user is
       // authenticated, but you need to store the additional information.
@@ -110,7 +112,7 @@ const Register = () => {
                 type="submit" // Important: Keep type="submit"
                 className="w-full text-white bg-blue-900 hover:bg-primary-700 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
               >
-                Sign in
+                Sign up
               </button>
               <p className="text-sm font-light text-gray-500 dark:text-gray-400">
                 Already have an account?
