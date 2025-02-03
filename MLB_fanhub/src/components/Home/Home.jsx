@@ -1,46 +1,78 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
-export default function Home() {
-    return (
-        <div className="mx-auto w-full max-w-7xl">
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-                <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h2 className="text-4xl font-bold sm:text-5xl">
-                            Download Now
-                            <span className="hidden sm:block text-4xl">Lorem Ipsum</span>
-                        </h2>
+function LuckyDraw() {
+    const [teams, setTeams] = useState([
+        "ARI", "ATL", "BAL", "BOS", "CHC", "CIN", "CLE", "COL", "CWS", "DET",
+        "HOU", "KC", "LAA", "LAD", "MIA", "MIL", "MIN", "NYM", "NYY", "OAK",
+        "PHI", "PIT", "SD", "SEA", "SF", "STL", "TB", "TEX", "TOR", "WSH"
+    ]); // MLB Team Abbreviations
+    
+    const [drawnTeams, setDrawnTeams] = useState([]);
+    const [remainingTeams, setRemainingTeams] = useState([...teams]); // Start with all teams
+    
+    const drawTeam = () => {
+        if (remainingTeams.length === 0) {
+          alert("All teams have been drawn!");
+          return;
+        }
+    
+        const randomIndex = Math.floor(Math.random() * remainingTeams.length);
+        const drawnTeam = remainingTeams[randomIndex];
+    
+        // spread syntax (...drawnTeams) creates a new array containing all the existing teams in 
+        // drawnTeams, and then the drawnTeam is added to the end of this new array.
+        setDrawnTeams([...drawnTeams, drawnTeam]);
 
-                        <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
-                            to="/"
-                        >
-                            <svg
-                                fill="white"
-                                width="24"
-                                height="24"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fillRule="evenodd"
-                                clipRule="evenodd"
-                            >
-                                <path d="M1.571 23.664l10.531-10.501 3.712 3.701-12.519 6.941c-.476.264-1.059.26-1.532-.011l-.192-.13zm9.469-11.56l-10.04 10.011v-20.022l10.04 10.011zm6.274-4.137l4.905 2.719c.482.268.781.77.781 1.314s-.299 1.046-.781 1.314l-5.039 2.793-4.015-4.003 4.149-4.137zm-15.854-7.534c.09-.087.191-.163.303-.227.473-.271 1.056-.275 1.532-.011l12.653 7.015-3.846 3.835-10.642-10.612z" />
-                            </svg>
-                            &nbsp; Download now
-                        </Link>
-                    </div>
-                </div>
+        
+        setRemainingTeams(remainingTeams.filter((team, index) => index !== randomIndex));
+    };
+    
+    const resetDraw = () => {
+        setDrawnTeams([]);
+        setRemainingTeams([...teams]);
+    };
+      
+  return (
+    <div className="container mx-auto p-4"> {/* Added container and padding */}
+      <h1 className="text-white text-3xl font-bold mb-4">MLB Lucky Draw</h1> {/* Styled heading */}
 
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    <img className="w-96" src="https://i.ibb.co/5BCcDYB/Remote2.png" alt="image1" />
-                </div>
-            </aside>
+      <div className="flex space-x-4 mb-4"> {/* Button group */}
+        <button
+          onClick={drawTeam}
+          disabled={remainingTeams.length === 0}
+          className="text-white bg-blue-500 hover:bg-blue-700  font-bold py-2 px-4 rounded disabled:bg-gray-500" // Tailwind styles
+        >
+          Draw a Team
+        </button>
+        <button
+          onClick={resetDraw}
+          className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" // Tailwind styles
+        >
+          Reset
+        </button>
+      </div>
 
-            <div className="grid  place-items-center sm:mt-20">
-                <img className="sm:w-96 w-48" src="https://i.ibb.co/2M7rtLk/Remote1.png" alt="image2" />
-            </div>
-
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium">Lorem Ipsum Yojo</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4"> {/* Grid for lists */}
+        <div>
+          <h2 className="text-white text-xl font-semibold mb-2">Drawn Teams:</h2> {/* Styled heading */}
+          <ul className="text-white list-disc pl-5"> {/* Styled list */}
+            {drawnTeams.map((team, index) => (
+              <li key={index}>{team}</li>
+            ))}
+          </ul>
         </div>
-    );
+
+        <div>
+          <h2 className="text-white text-xl font-semibold mb-2">Remaining Teams:</h2> {/* Styled heading */}
+          <ul className="text-white list-disc pl-5"> {/* Styled list */}
+            {remainingTeams.map((team, index) => (
+              <li  key={index}>{team}</li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
+
+export default LuckyDraw;
