@@ -40,7 +40,7 @@
 
 - Whenever the user types something into the input field, the `onChange` event is triggered.  The arrow function is executed, which takes the current value of the input field (`e.target.value`) and uses the `setEmail` function to update the `email` state variable in your React component.  This, in turn, causes React to re-render the component, reflecting the updated value in the input field (and anywhere else you might be using the `email` state).
 
-### 2. <Link/> tag: 
+### 2. *<Link/>* tag: 
 
 ```javaScript
 <Link to="/register">
@@ -62,7 +62,7 @@
 
 - `{handleSubmit}`: This is a reference to a function in your React component.  When the form is submitted, this function will be executed.
 
-### 4. async await asynchronous operations: 
+### 4. *async await* asynchronous operations: 
 
 ```javaScript
 const handleSubmit = async (e) => {
@@ -106,7 +106,7 @@ const handleSubmit = async (e) => {
 
 - `console.error("Error logging in:", error);`: This line logs the error to the console for debugging purposes.
 
-### 5. Proises in javaScript:
+### 5. *Proises* in javaScript:
 
 - It is an object that represents the eventual result of an asynchronous operation.
 
@@ -120,12 +120,12 @@ const handleSubmit = async (e) => {
 
 - `Rejected`: The operation failed.  The Promise has a reason for the failure (an error).
 
-### 6. onClick (React):
+### 6. *onClick (React)*:
 
 ```javaScript
   <button onClick={myFunction}>Click Me</button>  // myFunction is a function
 ```
 
-- Executes the `myFunction` when clicked
+- Executes the `myFunction` when clicked.
 
 ### 7. 
