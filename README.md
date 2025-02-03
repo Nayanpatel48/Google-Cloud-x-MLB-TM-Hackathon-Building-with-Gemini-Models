@@ -1,7 +1,7 @@
 # Google-Cloud-x-MLB-TM-Hackathon-Building-with-Gemini-Models
 ``This is a DEVPOST hackathon project built by me on feb 1 2025. winter break.``
 
-- The challenge that i have been working on: **Build a system that allows fans to select team(s), player(s), and other parts of the baseball experience and subsequently receive relevant summary audio, video and/or text digests on a regular cadence to stay up on the latest highlights and commentary related to the fan’s selection. Ensure your solution supports fans who speak English, Spanish, and Japanese. MLB information, including audio, video and text for a project in this category can be found here: https://github.com/MajorLeagueBaseball/google-cloud-mlb-hackathon.***
+- The challenge that i have been working on: **Wild Card Challenge 1: Come up with your own MLB™ fan engagement project!Use any of the data sets provided, public datasets, and Google Cloud AI tools to build a project for baseball fans. What will you dream up to next-level the MLB™ fan experience with Google Cloud?**
 
 ## Tools & technologies used in this project:
 
