@@ -120,3 +120,12 @@ const handleSubmit = async (e) => {
 
 - `Rejected`: The operation failed.  The Promise has a reason for the failure (an error).
 
+### 6. onClick (React):
+
+```javaScript
+  <button onClick={myFunction}>Click Me</button>  // myFunction is a function
+```
+
+- Executes the `myFunction` when clicked
+
+### 7. 
