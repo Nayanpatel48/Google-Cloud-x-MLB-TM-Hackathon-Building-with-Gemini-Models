@@ -26,7 +26,7 @@
 
 ## Learnings:
 
-### 1. OnChange, value prop for html elements such as input, buttons etc: 
+### 1. *OnChange={}*, *value={}* prop for html elements such as input, buttons etc: 
 
 ```javaScript 
 <input
@@ -50,3 +50,4 @@
 
 - `<Link ... >`: This is the JSX syntax for a link component, specifically the `Link` component from `react-router-dom`.  It's used for navigation within your React application.  It's preferred over regular `<a>`tags for internal links because it prevents a **full page reload** , making navigation faster and smoother.
 
+### 3. 
