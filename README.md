@@ -26,12 +26,12 @@
 
 ## Learnings:
 
-### 1. OnChange prop : 
+### 1. OnChange, value prop : 
 
 ```javaScript 
 <input
-value={email}
-onChange={(e) => setEmail(e.target.value)}
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
 />
 ```
 - `value={email}`: This is the crucial part that makes the input controlled.  It binds the value of the input field to the `email` variable in your component's state.  This means:
