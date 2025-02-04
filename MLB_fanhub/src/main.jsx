@@ -23,6 +23,7 @@ const router = createBrowserRouter(
   )
 )
 
+// read docs for more understanding
 createRoot(document.getElementById('root')).render(
     <RouterProvider router={router} />
 )
