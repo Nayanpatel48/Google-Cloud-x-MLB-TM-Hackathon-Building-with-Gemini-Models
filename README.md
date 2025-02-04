@@ -131,4 +131,4 @@ const handleSubmit = async (e) => {
 
 - Executes the `myFunction` when clicked.
 
-### 7. 
+### 7. CreateRoot method classic examples : [link](https://react.dev/reference/react-dom/client/createRoot#usage)
